@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { COMPANY, SERVICES, NAV_LINKS } from "@/lib/constants";
 
@@ -39,9 +40,13 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-[#cfcfcf] rounded-full flex items-center justify-center">
-                <span className="font-bold text-[#1a1a1a] text-lg">CA</span>
-              </div>
+              <Image
+                src="/logo.svg"
+                alt="Cooper Asphalt Paving"
+                width={48}
+                height={48}
+                className="w-12 h-12"
+              />
               <div>
                 <div className="font-bold text-xl">Cooper Asphalt</div>
                 <div className="text-sm text-gray-400">Paving</div>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { COMPANY, NAV_LINKS } from "@/lib/constants";
@@ -31,10 +32,14 @@ export default function Header() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            {/* TODO: Replace with actual logo once optimized */}
-            <div className="w-12 h-12 bg-[#cfcfcf] rounded-full flex items-center justify-center">
-              <span className="font-bold text-[#1a1a1a] text-lg">CA</span>
-            </div>
+            <Image
+              src="/logo.svg"
+              alt="Cooper Asphalt Paving"
+              width={56}
+              height={56}
+              className="w-14 h-14"
+              priority
+            />
             <div className="hidden sm:block">
               <div className="font-bold text-xl text-[#1a1a1a]">Cooper Asphalt</div>
               <div className="text-sm text-[#616d6d]">Paving</div>
