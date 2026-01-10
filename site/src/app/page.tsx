@@ -118,7 +118,7 @@ export default function Home() {
               </h2>
               <p className="text-gray-300 text-lg mb-8">
                 For over 35 years, our family has been paving driveways, parking
-                lots, and roads across Oklahoma. We take pride in every project,
+                lots, and roads starting right here in Oklahoma, expanding to anywhere we are needed. We take pride in every project,
                 treating your property like our own.
               </p>
 
