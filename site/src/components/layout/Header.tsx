@@ -34,16 +34,12 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/logo.svg"
-              alt="Cooper Asphalt Paving"
-              width={72}
-              height={72}
-              className="w-16 h-16 md:w-18 md:h-18"
+              alt="Cooper Generations Asphalt Company"
+              width={84}
+              height={84}
+              className="w-20 h-20"
               priority
             />
-            <div className="hidden sm:block">
-              <div className="font-bold text-xl text-[#1a1a1a]">Cooper Asphalt</div>
-              <div className="text-sm text-[#616d6d]">Paving</div>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}

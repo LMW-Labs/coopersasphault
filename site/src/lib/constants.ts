@@ -1,7 +1,7 @@
-// Cooper Asphalt Paving - Site Constants
+// Cooper Generations Asphalt Company - Site Constants
 
 export const COMPANY = {
-  name: "Cooper Asphalt Paving",
+  name: "Cooper Generations Asphalt Company",
   tagline: "Family Owned & Operated for 35+ Years",
   description: "Professional asphalt paving services in Ada, Oklahoma and surrounding areas. We serve all of Oklahoma and surrounding states.",
   established: "35+ years",
@@ -110,8 +110,8 @@ export const SOCIAL_LINKS = {
 
 // SEO
 export const SEO = {
-  defaultTitle: "Cooper Asphalt Paving | Ada, Oklahoma | 35+ Years Experience",
-  titleTemplate: "%s | Cooper Asphalt Paving",
+  defaultTitle: "Cooper Generations Asphalt Company | Ada, Oklahoma | 35+ Years Experience",
+  titleTemplate: "%s | Cooper Generations Asphalt",
   defaultDescription: "Professional asphalt paving, sealcoating, and repair services in Ada, Oklahoma. Family owned and operated for 35+ years. Free estimates. Serving all of Oklahoma and surrounding states.",
   siteUrl: "https://cooperasphaltpaving.com", // TODO: Confirm domain
   ogImage: "/images/og-image.jpg",

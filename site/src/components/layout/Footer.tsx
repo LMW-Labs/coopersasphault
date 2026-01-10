@@ -42,15 +42,11 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-6">
               <Image
                 src="/logo.svg"
-                alt="Cooper Asphalt Paving"
-                width={64}
-                height={64}
-                className="w-16 h-16"
+                alt="Cooper Generations Asphalt Company"
+                width={72}
+                height={72}
+                className="w-18 h-18"
               />
-              <div>
-                <div className="font-bold text-xl">Cooper Asphalt</div>
-                <div className="text-sm text-gray-400">Paving</div>
-              </div>
             </div>
             <p className="text-gray-400 mb-4">{COMPANY.tagline}</p>
             <div className="space-y-2 text-gray-300">

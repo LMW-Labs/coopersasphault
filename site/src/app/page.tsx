@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-[#1a1a1a] text-white min-h-[600px] flex items-center overflow-hidden">
+      <section className="relative bg-[#1a1a1a] text-white min-h-[600px] flex items-center">
         {/* Background Image Placeholder */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-[#1a1a1a]/90 to-transparent z-10" />
         <div
@@ -15,18 +15,6 @@ export default function Home() {
             backgroundImage: "url('/images/hero-placeholder.jpg')", // PLACEHOLDER: Add hero image
           }}
         />
-
-        {/* Large Logo Background */}
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/4 z-[5] opacity-15">
-          <Image
-            src="/logo.svg"
-            alt=""
-            width={800}
-            height={800}
-            className="w-[500px] h-[500px] md:w-[700px] md:h-[700px] lg:w-[800px] lg:h-[800px]"
-            aria-hidden="true"
-          />
-        </div>
 
         <div className="relative z-20 max-w-7xl mx-auto px-4 py-20">
           <div className="max-w-2xl">
@@ -79,8 +67,20 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-20 px-4 bg-white relative overflow-hidden">
+        {/* Large Logo Background */}
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0 opacity-[0.08]">
+          <Image
+            src="/logo.svg"
+            alt=""
+            width={900}
+            height={900}
+            className="w-[600px] h-[600px] md:w-[800px] md:h-[800px] lg:w-[900px] lg:h-[900px]"
+            aria-hidden="true"
+          />
+        </div>
+
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1a1a1a] mb-4">
               Our Paving Services
@@ -122,7 +122,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Why Choose Cooper Asphalt Paving?
+                Why Choose Cooper Generations?
               </h2>
               <p className="text-gray-300 text-lg mb-8">
                 For over 35 years, our family has been paving driveways, parking
