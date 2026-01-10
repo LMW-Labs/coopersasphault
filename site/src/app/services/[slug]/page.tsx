@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { COMPANY, SERVICES } from "@/lib/constants";
@@ -419,9 +420,15 @@ export default async function ServicePage({
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
             {/* Main Content */}
             <div className="lg:col-span-2">
-              {/* PLACEHOLDER: Add service-specific image */}
-              <div className="w-full h-80 bg-[#f5f5f5] rounded-2xl mb-8 flex items-center justify-center text-[#616d6d]">
-                <span>Image: {service.title}</span>
+              {/* Service Image */}
+              <div className="w-full h-96 md:h-[500px] rounded-2xl mb-8 overflow-hidden relative">
+                <Image
+                  src={`/images/services/${slug}.jpg`}
+                  alt={service.title}
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
 
               <div className="prose prose-lg max-w-none">
