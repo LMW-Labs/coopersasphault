@@ -23,7 +23,7 @@ export default function Home() {
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Professional Asphalt Paving in{" "}
-              <span className="text-[#ebf725]">Oklahoma</span>
+              <span className="text-[#ebf725]">Oklahoma</span> and Any State Where You Need Professional Work Done Right
             </h1>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
               From driveways to parking lots, we deliver quality asphalt paving
@@ -86,9 +86,13 @@ export default function Home() {
                 href={service.slug}
                 className="group bg-[#f5f5f5] rounded-2xl p-8 hover:shadow-xl transition-all hover:-translate-y-1"
               >
-                {/* PLACEHOLDER: Add service image */}
-                <div className="w-full h-48 bg-[#cfcfcf] rounded-xl mb-6 flex items-center justify-center text-[#616d6d]">
-                  <span className="text-sm">Image: {service.title}</span>
+                <div className="w-full h-48 rounded-xl mb-6 overflow-hidden relative">
+                  <Image
+                    src={`/images/services/${service.id}.jpg`}
+                    alt={service.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
                 <h3 className="text-xl font-bold text-[#1a1a1a] mb-3 group-hover:text-[#616d6d] transition-colors">
                   {service.title}
@@ -107,7 +111,7 @@ export default function Home() {
       {/* Why Choose Us Section */}
       <section className="py-20 px-4 bg-[#1a1a1a] text-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Why Choose Cooper Generations?
@@ -155,13 +159,13 @@ export default function Home() {
             </div>
 
             {/* Company Logo */}
-            <div className="w-full h-96 bg-[#333] rounded-2xl flex items-center justify-center p-8">
+            <div className="w-full bg-[#333] rounded-2xl flex items-center justify-center p-12">
               <Image
                 src="/logo.svg"
                 alt="Cooper Generations Asphalt Company"
-                width={400}
-                height={400}
-                className="w-full h-full object-contain max-w-[400px]"
+                width={500}
+                height={500}
+                className="w-full h-full object-contain"
               />
             </div>
           </div>
