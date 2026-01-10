@@ -198,49 +198,133 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1a1a1a] mb-4">
-              Serving All of Oklahoma
+              Based in Oklahoma, Serving the Nation
             </h2>
             <p className="text-[#616d6d] text-lg max-w-2xl mx-auto">
-              Based in Ada, we travel throughout Oklahoma and surrounding states
-              for your paving needs.
+              Our home is in Ada, Oklahoma, where we&apos;ve built our reputation for quality work over 35 years. But great paving shouldn&apos;t be limited by state lines.
             </p>
           </div>
 
+          {/* Service Area Map */}
+          <div className="bg-[#f5f5f5] rounded-2xl p-8 mb-12">
+            <div className="relative">
+              {/* Simplified US Map representation */}
+              <div className="flex justify-center items-center py-8">
+                <div className="relative w-full max-w-3xl">
+                  {/* Map visual with state indicators */}
+                  <div className="grid grid-cols-7 gap-2 md:gap-4">
+                    {/* Row 1 - Northern states */}
+                    <div className="col-span-7 flex justify-center gap-2 md:gap-4">
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="WA" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="MT" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="ND" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="MN" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="WI" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="MI" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="NY" />
+                    </div>
+                    {/* Row 2 */}
+                    <div className="col-span-7 flex justify-center gap-2 md:gap-4">
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="OR" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="ID" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="WY" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="SD" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="IA" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="IL" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="OH" />
+                    </div>
+                    {/* Row 3 - Central states with KS highlighted */}
+                    <div className="col-span-7 flex justify-center gap-2 md:gap-4">
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="NV" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="UT" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="CO" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-[#ebf725] rounded opacity-80 flex items-center justify-center text-xs font-bold" title="KS">KS</div>
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-[#ebf725] rounded opacity-80 flex items-center justify-center text-xs font-bold" title="MO">MO</div>
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="KY" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="VA" />
+                    </div>
+                    {/* Row 4 - Oklahoma row - MAIN FOCUS */}
+                    <div className="col-span-7 flex justify-center gap-2 md:gap-4">
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="CA" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="AZ" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="NM" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-[#ebf725] rounded flex items-center justify-center text-xs md:text-sm font-bold border-4 border-[#1a1a1a] shadow-lg" title="OK">OK</div>
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-[#ebf725] rounded opacity-90 flex items-center justify-center text-xs font-bold" title="AR">AR</div>
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-[#ebf725] rounded opacity-80 flex items-center justify-center text-xs font-bold" title="TN">TN</div>
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="NC" />
+                    </div>
+                    {/* Row 5 - Southern states */}
+                    <div className="col-span-7 flex justify-center gap-2 md:gap-4">
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-transparent" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-transparent" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-[#ebf725] rounded opacity-90 flex items-center justify-center text-xs font-bold" title="TX">TX</div>
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-[#ebf725] rounded opacity-80 flex items-center justify-center text-xs font-bold" title="LA">LA</div>
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-[#ebf725] rounded opacity-80 flex items-center justify-center text-xs font-bold" title="MS">MS</div>
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="AL" />
+                      <div className="w-8 h-8 md:w-12 md:h-12 bg-gray-300 rounded opacity-50" title="GA" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Legend */}
+              <div className="flex flex-wrap justify-center gap-6 mt-6">
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-4 bg-[#ebf725] rounded border-2 border-[#1a1a1a]" />
+                  <span className="text-base font-bold text-[#1a1a1a]">Home Base (Oklahoma)</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-4 bg-[#ebf725] rounded opacity-80" />
+                  <span className="text-base font-bold text-[#616d6d]">Completed Projects</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-4 bg-gray-300 rounded opacity-50" />
+                  <span className="text-base font-bold text-[#616d6d]">Available Upon Request</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* PLACEHOLDER: Add Oklahoma map or service area graphic */}
-            <div className="w-full h-80 bg-[#f5f5f5] rounded-2xl flex items-center justify-center text-[#616d6d]">
-              <span>Image: Oklahoma service area map</span>
+            <div className="bg-[#f5f5f5] rounded-2xl p-8">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-[#ebf725] rounded-full flex items-center justify-center">
+                  <LocationIcon className="w-8 h-8 text-[#1a1a1a]" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-[#1a1a1a]">Oklahoma First</h3>
+                  <p className="text-[#616d6d]">Our home state, our priority</p>
+                </div>
+              </div>
+              <p className="text-[#616d6d] mb-6">
+                We proudly serve all of Oklahoma - from Ada to Oklahoma City, Tulsa to Lawton, and every community in between. Local jobs mean faster response times and competitive pricing.
+              </p>
+              <div className="flex items-center gap-2 text-[#1a1a1a] font-semibold">
+                <CheckIcon className="text-[#ebf725]" />
+                <span>Same-week estimates available</span>
+              </div>
             </div>
 
-            <div>
-              <h3 className="text-2xl font-bold text-[#1a1a1a] mb-6">
-                Cities We Serve
-              </h3>
-              <div className="grid grid-cols-2 gap-4">
-                {[
-                  "Ada",
-                  "Oklahoma City",
-                  "Norman",
-                  "Edmond",
-                  "Moore",
-                  "Shawnee",
-                  "Durant",
-                  "Ardmore",
-                  "Lawton",
-                  "Stillwater",
-                  "Tulsa",
-                  "And More...",
-                ].map((city) => (
-                  <div key={city} className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-[#ebf725] rounded-full" />
-                    <span className="text-[#1a1a1a]">{city}</span>
-                  </div>
-                ))}
+            <div className="bg-[#1a1a1a] rounded-2xl p-8 text-white">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-[#ebf725] rounded-full flex items-center justify-center">
+                  <TruckIcon className="w-8 h-8 text-[#1a1a1a]" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold">Willing to Travel</h3>
+                  <p className="text-gray-400">Anywhere in the United States</p>
+                </div>
               </div>
-              <p className="text-[#616d6d] mt-6">
-                Don&apos;t see your city? Give us a call - we&apos;re willing to travel
-                for the right project!
+              <p className="text-gray-300 mb-4">
+                We&apos;ve completed projects in Texas, Arkansas, Louisiana, Mississippi, Kansas, Missouri, and beyond. If you need professional work done right, we&apos;ll make the trip.
               </p>
+              <p className="text-[#ebf725] font-semibold mb-4">
+                Don&apos;t see your state? Give us a call - we&apos;re willing to travel for the right project!
+              </p>
+              <div className="flex items-center gap-2 font-semibold">
+                <CheckIcon className="text-[#ebf725]" />
+                <span>Contact us for out-of-state quotes</span>
+              </div>
             </div>
           </div>
         </div>
@@ -392,6 +476,14 @@ function ClockIcon({ className = "w-5 h-5" }: { className?: string }) {
   return (
     <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  );
+}
+
+function TruckIcon({ className = "w-5 h-5" }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 17h8M8 17a2 2 0 11-4 0 2 2 0 014 0zM8 17H5.236a2 2 0 01-1.789-1.106l-.894-1.788A2 2 0 013 13V8a2 2 0 012-2h6v11zm8 0a2 2 0 100-4 2 2 0 000 4zm0 0h2a2 2 0 002-2v-3a2 2 0 00-2-2h-2.343M11 6h4.343A2 2 0 0117 7.172V11" />
     </svg>
   );
 }
