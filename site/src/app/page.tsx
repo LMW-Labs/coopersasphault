@@ -27,7 +27,7 @@ export default function Home() {
             </h1>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
               From driveways to parking lots, we deliver quality asphalt paving
-              services you can trust. Serving Ada and all of Oklahoma for over
+              services you can trust. Serving people like you all over the country for over
               35 years.
             </p>
 
