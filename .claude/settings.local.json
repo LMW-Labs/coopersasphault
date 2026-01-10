@@ -12,7 +12,8 @@
       "Bash(git remote add:*)",
       "Bash(git push:*)",
       "Bash(vercel --yes:*)",
-      "Bash(vercel --prod --yes:*)"
+      "Bash(vercel --prod --yes:*)",
+      "Bash(copy \"c:\\\\Users\\\\teamw\\\\mydev\\\\cooperasphaultpaving\\\\assets\\\\asphaultpaving.jpg\" \"c:\\\\Users\\\\teamw\\\\mydev\\\\cooperasphaultpaving\\\\site\\\\public\\\\images\\\\hero.jpg\")"
     ]
   }
 }

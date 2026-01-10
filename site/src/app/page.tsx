@@ -12,7 +12,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/images/hero-placeholder.jpg')", // PLACEHOLDER: Add hero image
+            backgroundImage: "url('/images/hero.jpg')",
           }}
         />
 
