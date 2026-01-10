@@ -67,20 +67,8 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 px-4 bg-white relative overflow-hidden">
-        {/* Large Logo Background */}
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0 opacity-[0.08]">
-          <Image
-            src="/logo.svg"
-            alt=""
-            width={900}
-            height={900}
-            className="w-[600px] h-[600px] md:w-[800px] md:h-[800px] lg:w-[900px] lg:h-[900px]"
-            aria-hidden="true"
-          />
-        </div>
-
-        <div className="max-w-7xl mx-auto relative z-10">
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#1a1a1a] mb-4">
               Our Paving Services
@@ -166,9 +154,15 @@ export default function Home() {
               </div>
             </div>
 
-            {/* PLACEHOLDER: Add about/team image */}
-            <div className="w-full h-96 bg-[#333] rounded-2xl flex items-center justify-center text-gray-500">
-              <span>Image: Team or equipment photo</span>
+            {/* Company Logo */}
+            <div className="w-full h-96 bg-[#333] rounded-2xl flex items-center justify-center p-8">
+              <Image
+                src="/logo.svg"
+                alt="Cooper Generations Asphalt Company"
+                width={400}
+                height={400}
+                className="w-full h-full object-contain max-w-[350px]"
+              />
             </div>
           </div>
         </div>
