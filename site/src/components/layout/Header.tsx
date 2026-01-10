@@ -35,9 +35,9 @@ export default function Header() {
             <Image
               src="/logo.svg"
               alt="Cooper Asphalt Paving"
-              width={56}
-              height={56}
-              className="w-14 h-14"
+              width={72}
+              height={72}
+              className="w-16 h-16 md:w-18 md:h-18"
               priority
             />
             <div className="hidden sm:block">

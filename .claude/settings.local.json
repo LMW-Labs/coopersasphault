@@ -11,7 +11,8 @@
       "Bash(vercel --version:*)",
       "Bash(git remote add:*)",
       "Bash(git push:*)",
-      "Bash(vercel --yes:*)"
+      "Bash(vercel --yes:*)",
+      "Bash(vercel --prod --yes:*)"
     ]
   }
 }

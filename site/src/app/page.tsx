@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { COMPANY, SERVICES } from "@/lib/constants";
 
@@ -5,7 +6,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-[#1a1a1a] text-white min-h-[600px] flex items-center">
+      <section className="relative bg-[#1a1a1a] text-white min-h-[600px] flex items-center overflow-hidden">
         {/* Background Image Placeholder */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-[#1a1a1a]/90 to-transparent z-10" />
         <div
@@ -14,6 +15,18 @@ export default function Home() {
             backgroundImage: "url('/images/hero-placeholder.jpg')", // PLACEHOLDER: Add hero image
           }}
         />
+
+        {/* Large Logo Background */}
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/4 z-[5] opacity-15">
+          <Image
+            src="/logo.svg"
+            alt=""
+            width={800}
+            height={800}
+            className="w-[500px] h-[500px] md:w-[700px] md:h-[700px] lg:w-[800px] lg:h-[800px]"
+            aria-hidden="true"
+          />
+        </div>
 
         <div className="relative z-20 max-w-7xl mx-auto px-4 py-20">
           <div className="max-w-2xl">

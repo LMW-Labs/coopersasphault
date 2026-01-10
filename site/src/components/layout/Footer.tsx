@@ -43,9 +43,9 @@ export default function Footer() {
               <Image
                 src="/logo.svg"
                 alt="Cooper Asphalt Paving"
-                width={48}
-                height={48}
-                className="w-12 h-12"
+                width={64}
+                height={64}
+                className="w-16 h-16"
               />
               <div>
                 <div className="font-bold text-xl">Cooper Asphalt</div>
