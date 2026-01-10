@@ -161,7 +161,7 @@ export default function Home() {
                 alt="Cooper Generations Asphalt Company"
                 width={400}
                 height={400}
-                className="w-full h-full object-contain max-w-[350px]"
+                className="w-full h-full object-contain max-w-[400px]"
               />
             </div>
           </div>
